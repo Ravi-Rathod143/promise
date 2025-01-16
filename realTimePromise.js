@@ -96,33 +96,33 @@
 // Example 4: Promise.all - Parallel Task Execution
 // तुमचं कंपनीचं app 3 वेगवेगळ्या API calls करून data मिळवतं. तुम्हाला ही कामं एकत्र (parallel) करायची आहेत.
 
-function fetchProduct(){
-    // promise return krun deto ya function la
-    return new Promise((res,rej)=>{
-        setTimeout(() => {
-            res("ypur product is fetched...")
-        },2000)
-    })
-}
-function fetchData(){
-    return new Promise((res,rej)=>{
-        res("your data is fetch successfully...")
-    },3000)
-}
-function oneMoreExample(){
-    return new Promise((res,rej)=>{
-        setTimeout(()=>{
-            rej(new Error("Erroe are found ..."))
-        },4000)
-    })
-}
-Promise.all([fetchProduct,fetchData,oneMoreExample])
-.then((result)=>{
-    console.log("all result data  ",result)
-})
-.catch((err)=>{
-    console.log("data are not found",err)
-})
+// function fetchProduct(){
+//     // promise return krun deto ya function la
+//     return new Promise((res,rej)=>{
+//         setTimeout(() => {
+//             res("ypur product is fetched...")
+//         },2000)
+//     })
+// }
+// function fetchData(){
+//     return new Promise((res,rej)=>{
+//         res("your data is fetch successfully...")
+//     },3000)
+// }
+// function oneMoreExample(){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             rej(new Error("Erroe are found ..."))
+//         },4000)
+//     })
+// }
+// Promise.all([fetchProduct,fetchData,oneMoreExample])
+// .then((result)=>{
+//     console.log("all result data  ",result)
+// })
+// .catch((err)=>{
+//     console.log("data are not found",err)
+// })
 
 
 
