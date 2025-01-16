@@ -1,6 +1,6 @@
 // ---------------------    currying ---------------------------------------------------------------------------------------------------
 
-// currying jo process he wo Aadha kaam krana  and adha kaam baad me krna (A function which returns a function)
+// currying jo process he wo ** Aadha kaam krana  and adha kaam baad me krna ** (A function which returns a function)
 // eg  mere paas do fn he  boilnoodles  and  cookNoodle 
 // muze noodle ko boil krke rakhana he and cook baad me krna he
 // to yahan pe maine ek simply ek Spectial function banaya he that is curry
@@ -30,7 +30,7 @@ const cookMyFood=curry()  // mazya kde fkt boiled ch ahe cookNoodle alach nahi t
 
 setTimeout(()=>{
     hasCustomerCame=true;
-    cookMyFood()
+    cookMyFood()  // baki che half rahilele kaam purn krun de
 },5000)
 
 
